@@ -1,0 +1,26 @@
+ALGORITHM last_occ
+VAR
+    
+    T:ARRAY_OF FLOAT [n];
+    exist: BOOLEAN;
+    x: FLOAT;
+    i: INTEGER;
+    occ: INTEGER
+BEGIN
+   write("ecrire la valeur de l'element a chercher", x);
+   read(x);
+   i:=n
+   WHILE (i>=1 AND exist= false) DO
+    
+    IF (T[i]=x) THEN
+        
+        exist = true;
+        occ:=i;
+    END_IF
+   END_WHILE
+
+   write("la derniere occurence est", i);
+
+
+    
+END

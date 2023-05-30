@@ -1,0 +1,24 @@
+ALGORITHM array_somme
+VAR
+    Tab: ARRAY of FLOAT[5];
+    i, s: FLOAT;
+BEGIN
+    FOR i FROM 1 TO 5  DO
+        
+        write("entrer les elements du tableau", i);
+        read(Tab[i]);
+
+    END_FOR
+   
+   s:=0;
+   FOR i FROM 1 TO 5  DO
+    
+    s:= s+ Tab[i];
+   END_FOR
+
+   FOR i FROM 0 TO 5  DO
+    write("les elements du tableau sont", Tab[i]);
+   END_FOR
+   write("la somme est", s)
+    
+END

@@ -1,0 +1,24 @@
+ALGORITHM operation
+VAR
+    T: ARRAY_OF FLOAT[n];
+    i: INTEGER;
+    sum, pr, moy: FLOAT
+
+BEGIN
+
+sum:=0;
+pr:=1;
+
+FOR i FROM 0 TO n-1  DO
+    
+    read(T[i])
+    sum:= sum+ T[i];
+    pr:= pr*T[i];
+END_FOR
+
+moy:= sum/n;
+
+write(" la somme des elements du tableau est", sum)
+write("le produit des elements est", pr)
+write("la moyenne est elements est", moy)
+END

@@ -1,0 +1,36 @@
+ALGORITHM occurence
+VAR
+    T: ARRAY_OF FLOAT[n];
+    x: FLOAT;
+    exist: BOOLEAN;
+    p,occ: INTEGER;
+    
+    
+BEGIN
+    p=0;
+
+    write("entrer la valeur du reel a chercher", x)
+    read(x);
+    exist:= false;
+
+    WHILE (i<n) AND (exist:= false) DO
+        
+        IF (T[i]=x) THEN
+            
+            exist= true;
+            p:=1;
+            occ= i
+
+        END_IF
+    END_WHILE
+
+    if exist = true THEN
+    write(" la premiere occurence de l'element x est", i)
+    ELSE
+   write("l'element n'existe pas")
+   END_IF
+
+// expl
+T[2, 4, 6, 4, 7 , 4]
+4==> T[1] donc occ=1
+END
